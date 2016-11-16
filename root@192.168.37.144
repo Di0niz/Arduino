@@ -1,0 +1,10 @@
+import mraa as mraa
+
+
+mraa.Spi(0)
+
+txbuf = bytearray[4]
+
+txbuf[1] = 39
+
+mraa.write(txbuf)
